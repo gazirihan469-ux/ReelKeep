@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reelkeep – Free Instagram Reels Downloader (HD, No Login)</title>
+<meta name="description" content="Paste a public Instagram Reel link and save it as an MP4 on your phone or computer. Free, no login, no app.">
+<meta name="theme-color" content="#1E1530">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F6F2FA;--ink:#1E1530;--muted:#5E5573;--coral:#FF4D6D;--sun:#FFC93C;--card:#fff;--line:#DDD3EA}
+@media (prefers-color-scheme:dark){:root{--paper:#161022;--ink:#F3EEFA;--muted:#B3A8C8;--card:#21183A;--line:#3A2D5A}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 Figtree,system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.logo{font:800 24px 'Bricolage Grotesque',sans-serif;text-decoration:none;letter-spacing:-.02em}
+.logo i{display:inline-block;width:14px;height:20px;background:var(--coral);border-radius:4px;margin-right:8px;transform:rotate(12deg);vertical-align:-3px;box-shadow:6px 0 0 var(--sun)}
+nav a{margin-left:18px;text-decoration:none;color:var(--muted);font-weight:500}
+nav a:hover{color:var(--ink)}
+.hero{padding:44px 0 28px}
+h1{font:800 clamp(38px,7vw,68px)/1.02 'Bricolage Grotesque',sans-serif;letter-spacing:-.03em;margin:0 0 16px;max-width:15ch}
+.lead{color:var(--muted);max-width:52ch;margin:0 0 28px;font-size:19px}
+.ticket{background:var(--ink);padding:14px;border-radius:22px;position:relative}
+.ticket:before,.ticket:after{content:"";position:absolute;top:50%;width:22px;height:22px;background:var(--paper);border-radius:50%;transform:translateY(-50%)}
+.ticket:before{left:-11px}.ticket:after{right:-11px}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+.row input{flex:1 1 260px;min-width:0;font:500 17px Figtree,sans-serif;padding:16px 18px;border-radius:14px;border:2px solid transparent;background:#fff;color:#1E1530}
+.row input::placeholder{color:#8a80a0}
+button{font:600 17px Figtree,sans-serif;border:0;border-radius:14px;padding:16px 22px;cursor:pointer}
+.go{background:var(--coral);color:#fff;flex:0 0 auto}
+.go:hover{filter:brightness(1.08)}
+.go:disabled{opacity:.6;cursor:wait}
+.alt{background:rgba(255,255,255,.14);color:#fff}
+.hint{color:var(--muted);font-size:14px;margin:12px 4px 0}
+#result{margin-top:22px}
+.res{display:grid;grid-template-columns:150px 1fr;gap:20px;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px;align-items:center}
+.res img{width:150px;aspect-ratio:9/16;object-fit:cover;border-radius:12px;background:var(--line)}
+.res h2{font:800 22px 'Bricolage Grotesque',sans-serif;margin:0 0 4px}
+.res p{margin:0 0 14px;color:var(--muted);font-size:15px}
+.dl{display:inline-block;background:var(--sun);color:#1E1530;text-decoration:none;font-weight:600;padding:14px 20px;border-radius:14px}
+.err{background:#FFE3E8;color:#8A1230;border-radius:14px;padding:14px 16px;font-weight:500}
+@media (max-width:520px){.res{grid-template-columns:1fr}.res img{width:120px}}
+section.block{padding:44px 0;border-top:1px solid var(--line)}
+h2.t{font:800 clamp(26px,4vw,36px)/1.1 'Bricolage Grotesque',sans-serif;letter-spacing:-.02em;margin:0 0 22px}
+.steps{list-style:none;padding:0;margin:0;counter-reset:s;display:grid;gap:14px}
+.steps li{counter-increment:s;display:flex;gap:16px;align-items:flex-start}
+.steps li:before{content:counter(s);flex:0 0 38px;height:38px;border-radius:50%;background:var(--coral);color:#fff;font:800 18px 'Bricolage Grotesque';display:grid;place-items:center}
+.steps b{display:block}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:26px}
+.facts h3{font:800 19px 'Bricolage Grotesque';margin:0 0 6px}
+.facts p{margin:0;color:var(--muted);font-size:16px}
+details{border-bottom:1px solid var(--line);padding:14px 0}
+summary{cursor:pointer;font-weight:600}
+details p{color:var(--muted);margin:10px 0 0}
+footer{border-top:1px solid var(--line);padding:30px 0 50px;color:var(--muted);font-size:14px}
+footer a{margin-right:16px}
+.doc{padding:40px 0;max-width:70ch}
+.doc h1{font-size:clamp(32px,5vw,48px);max-width:none}
+.doc h3{font:800 20px 'Bricolage Grotesque';margin:26px 0 6px}
+.doc p,.doc li{color:var(--muted)}
+.hide{display:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="#"><i></i><span class="brand">Reelkeep</span></a>
+  <nav><a href="#about">About</a><a href="#contact">Contact</a></nav>
+</header>
+
+<main>
+<!-- HOME -->
+<div id="v-home">
+  <div class="hero">
+    <h1>Save any public Reel to your phone.</h1>
+    <p class="lead">Paste the link, tap download, get an MP4. No login, no app, no watermark added by us.</p>
+    <form class="ticket" id="f" autocomplete="off">
+      <div class="row">
+        <input id="u" type="url" inputmode="url" placeholder="https://www.instagram.com/reel/..." aria-label="Instagram Reel link" required>
+        <button type="button" class="alt" id="paste">Paste</button>
+        <button type="submit" class="go" id="go">Get video</button>
+      </div>
+    </form>
+    <p class="hint">Works with public Reels, videos and posts. Private accounts can't be downloaded.</p>
+    <div id="result" aria-live="polite"></div>
+  </div>
+
+  <section class="block">
+    <h2 class="t">How to save a Reel</h2>
+    <ol class="steps">
+      <li><div><b>Copy the link</b>In Instagram, open the Reel, tap the share icon and choose Copy link.</div></li>
+      <li><div><b>Paste it above</b>Tap Paste (or long-press the box) and press Get video.</div></li>
+      <li><div><b>Download the MP4</b>Tap Download. On iPhone the file lands in Files; on Android it appears in your Gallery.</div></li>
+    </ol>
+  </section>
+
+  <section class="block">
+    <div class="facts">
+      <div><h3>Original quality</h3><p>You get the best quality Instagram makes publicly available, up to 1080p.</p></div>
+      <div><h3>Nothing stored</h3><p>We don't keep links, files or download history.</p></div>
+      <div><h3>Any device</h3><p>It runs in your browser on iPhone, Android, Windows and Mac.</p></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2 class="t">Questions</h2>
+    <details><summary>Is it free?</summary><p>Yes. There is no sign-up and no daily limit beyond basic fair-use protection.</p></details>
+    <details><summary>Can I download from private accounts?</summary><p>No. Only public content can be fetched, and we never ask for your Instagram password.</p></details>
+    <details><summary>Where does the video go on iPhone?</summary><p>Safari saves it to the Files app. Press and hold the file and choose Save to Photos.</p></details>
+    <details><summary>Can I repost what I download?</summary><p>Only with the creator's permission. Download for personal, offline viewing and credit the creator when you share.</p></details>
+  </section>
+</div>
+
+<!-- POLICY VIEWS -->
+<div id="v-privacy" class="doc hide">
+  <h1>Privacy Policy</h1><p>Last updated: <span class="date"></span></p>
+  <h3>What we collect</h3><p>We do not require an account. The link you paste is sent to our server only to fetch the video and is not saved afterwards. Our server may keep short-lived technical logs (IP address, time, error codes) for security and abuse prevention.</p>
+  <h3>Cookies and analytics</h3><p>We may use analytics and advertising partners that set cookies to measure traffic and show ads. You can block cookies in your browser settings.</p>
+  <h3>Third parties</h3><p>Third-party services such as hosting, analytics and ad networks may process technical data under their own privacy policies.</p>
+  <h3>Children</h3><p>This site is not directed to children under 13.</p>
+  <h3>Your rights</h3><p>To ask about or request deletion of any data, email <a class="email-link"></a>.</p>
+</div>
+
+<div id="v-terms" class="doc hide">
+  <h1>Terms of Service</h1><p>Last updated: <span class="date"></span></p>
+  <h3>Use of the service</h3><p>This tool lets you save publicly available content for personal, offline use. You are responsible for making sure your use complies with Instagram's Terms and applicable copyright law.</p>
+  <h3>Prohibited use</h3><p>Do not use this site to infringe copyright, harass others, violate privacy, or to send automated or excessive requests.</p>
+  <h3>No affiliation</h3><p><span class="brand"></span> is not affiliated with, endorsed by or connected to Instagram or Meta Platforms, Inc. All trademarks belong to their owners. We do not host any Instagram content.</p>
+  <h3>Disclaimer</h3><p>The service is provided "as is" without warranties. We may change or stop it at any time.</p>
+  <h3>Copyright and DMCA</h3><p>If you own content and believe it was accessed in a way that infringes your rights, email <a class="email-link"></a> with the link and proof of ownership. We will respond promptly.</p>
+</div>
+
+<div id="v-about" class="doc hide">
+  <h1>About</h1>
+  <p><span class="brand"></span> is a small, free tool for saving public Instagram Reels for personal viewing. It does not store files, does not ask you to log in, and only works with public content. We respect creators, so please credit them and ask before reposting.</p>
+</div>
+
+<div id="v-contact" class="doc hide">
+  <h1>Contact</h1>
+  <p>Questions, bug reports or copyright requests: <a class="email-link"></a></p>
+</div>
+</main>
+
+<footer>
+  <p><a href="#about">About</a><a href="#privacy">Privacy Policy</a><a href="#terms">Terms of Service</a><a href="#contact">Contact</a></p>
+  <p>© <span class="year"></span> <span class="brand"></span>. Not affiliated with Instagram or Meta. We host no Instagram content.</p>
+</footer>
+</div>
+
+<script>
+// ---- Edit these three lines ----
+const SITE_NAME = "Reelkeep";
+const EMAIL = "contact@yourdomain.com";
+const API = ""; // leave empty if backend serves this page
+// --------------------------------
+document.querySelectorAll('.brand').forEach(e=>e.textContent=SITE_NAME);
+document.title = SITE_NAME + " – Free Instagram Reels Downloader (HD, No Login)";
+document.querySelectorAll('.email-link').forEach(a=>{a.textContent=EMAIL;a.href='mailto:'+EMAIL});
+document.querySelectorAll('.year').forEach(e=>e.textContent=new Date().getFullYear());
+document.querySelectorAll('.date').forEach(e=>e.textContent=new Date().toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'}));
+
+function route(){
+  const h=(location.hash||'#').slice(1);
+  const v=['privacy','terms','about','contact'].includes(h)?h:'home';
+  ['home','privacy','terms','about','contact'].forEach(n=>document.getElementById('v-'+n).classList.toggle('hide',n!==v));
+  window.scrollTo(0,0);
+}
+addEventListener('hashchange',route);route();
+
+const $=id=>document.getElementById(id),res=$('result');
+$('paste').onclick=async()=>{
+  try{$('u').value=await navigator.clipboard.readText();$('u').focus()}
+  catch{$('u').focus();res.innerHTML='<div class="err">Your browser blocked clipboard access. Long-press the box and choose Paste.</div>'}
+};
+$('f').onsubmit=async e=>{
+  e.preventDefault();
+  const url=$('u').value.trim();
+  if(!/instagram\.com\//i.test(url)){res.innerHTML='<div class="err">That doesn\'t look like an Instagram link. Copy the link from the Reel\'s share menu.</div>';return}
+  $('go').disabled=true;$('go').textContent='Fetching…';res.innerHTML='';
+  try{
+    const r=await fetch(API+'/api/info',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({url})});
+    const d=await r.json();
+    if(!r.ok)throw new Error(d.error||'Something went wrong.');
+    const esc=s=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    res.innerHTML='<div class="res">'+(d.thumbnail?'<img alt="Reel preview" src="'+API+'/api/thumb?u='+encodeURIComponent(d.thumbnail)+'">':'<div></div>')+
+      '<div><h2>Ready to download</h2><p>'+esc(d.title||'Instagram video')+'</p><a class="dl" href="'+API+'/api/file?u='+encodeURIComponent(d.video)+'" download="'+SITE_NAME+'-reel.mp4">Download MP4</a></div></div>';
+  }catch(err){
+    res.innerHTML='<div class="err">'+(err.message||'Could not fetch this link.')+' Check that the post is public and try again.</div>';
+  }
+  $('go').disabled=false;$('go').textContent='Get video';
+};
+</script>
+</body>
+</html>
